@@ -1,0 +1,20 @@
+<h2 class="panel">Blogs</h2>
+
+<div  class="card-deck">
+  <div class="card" *ngFor="let blog of blogs" >
+    <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+    <div class="card-body">
+      <h5 class="card-title">{{ blog.Name }}</h5>
+      <p class="card-text">{{ blog.Description }}</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">{{ blog.Period }}</small>
+    </div>
+  </div>
+  <!--<h3>
+    <a [title]="blog + ' details'">
+      {{ blog }}
+    </a>
+  </h3>-->
+</div>
+
